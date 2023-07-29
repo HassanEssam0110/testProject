@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap");
+
+:root {
+  --main-color: #1c2c3b;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+html {
+}
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #f1f1f1c5;
+}
+
+.color-main {
+  color: var(--main-color);
+}
+.bg-color-main {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  transition: 0.3s;
+}
+.bg-color-main:hover {
+  color: var(--main-color);
+  border-color: var(--main-color);
+  background-color: #fff;
+}
+
+.land {
+  height: fit-content;
+  background-color: #fff;
+  border: 1px dashed #1c2c3b;
+  border-radius: 40px;
+  box-shadow: 10px 10px 10px #1c2c3b85;
+}
+
+.logo {
+  color: #167f8d;
+  background-color: #f2f2f2;
+  border-radius: 50rem 30rem 50rem 30rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #2f2e41a1;
+}
+
+.contact {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #1c2c3b 0%,
+    #f7ac2d 29%,
+    #dc3545 67%,
+    #de9b28 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.contact p {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.contact i {
+  font-size: 6rem;
+}
+.arow-down i {
+  font-size: 2rem;
+  color: var(--main-color);
+  -webkit-animation: mover 0.5s infinite alternate;
+  animation: mover 0.5s infinite alternate;
+}
+
+/* section prod */
+.prod-title {
+  font-size: 1rem;
+}
+/*End of section prod */
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #0d6efd !important;
+  font-size: 25px;
+}
